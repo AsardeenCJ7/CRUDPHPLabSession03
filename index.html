@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Customer</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="containers">
+      <div class="registration">
+        <h2>Add Customer</h2>
+        <form method="post" action="./php/edit_customer.php">
+          <table>
+            <tr>
+              <td><label for="customer_id">Customer ID:</label></td>
+              <td>
+                <input
+                  type="number"
+                  id="customer_id"
+                  name="customer_id"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="first_name">First Name:</label></td>
+              <td>
+                <input type="text" id="first_name" name="first_name" required />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="last_name">Last Name:</label></td>
+              <td>
+                <input type="text" id="last_name" name="last_name" required />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">Email:</label></td>
+              <td><input type="email" id="email" name="email" required /></td>
+            </tr>
+            <tr>
+              <td><label for="address">Address:</label></td>
+              <td>
+                <input type="text" id="address" name="address" required />
+              </td>
+            </tr>
+          </table>
+          <input type="submit" value="Add Customer" />
+        </form>
+      </div>
+
+      <div class="search">
+        <h2>Search Customer</h2>
+        <form method="get" action="./php/search.php">
+          <table>
+            <tr>
+              <td><label for="search_customer_id">Customer ID:</label></td>
+              <td>
+                <input
+                  type="number"
+                  id="search_customer_id"
+                  name="search_customer_id"
+                  required
+                />
+              </td>
+            </tr>
+          </table>
+          <input type="submit" value="Search" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
